@@ -34,7 +34,7 @@ def main():
     videoCount = backup.videoCount()
     log.log("Backup contains {} videos...".format(videoCount))
     log.log("The backup is missing {} videos from the path {}".format(len(missingFiles), backupPath))
-    log.log("Creating a new backup file that contains the missing {} videos...".format(missingFiles))
+    log.log("Creating a new backup file that contains the missing {} videos...".format(len(missingFiles)))
 
     # Time to do some FUCKED shit :agony: 
     for file in missingFiles: 
