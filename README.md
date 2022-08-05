@@ -23,15 +23,25 @@ I'll go over this as if you were using the stand-alone executable provided above
 
 Steps: 
     1. Download the stand-alone exe and store it somewhere on your PC, your normal download folder is fine
+    <br>
     2. Take any videos you'd like to add to Insights Capture, and move them to the folder Insights Capture is using for it's video library (you can see the folder being used in Insights Capture's settings, under the "Video Folder" setting)
+    <br>
     3. Open up CMD or Powershell, and cd to the folder you stored the executable in. For example, if you stored the executable in your downloads folder, you'd type in `cd C:/Users/YOUR_WINDOWS_USERNAME_HERE/Downloads`. 
+    <br>
     4. In CMD, run the `add_missing_videos.exe` by writing `add_missing_videos.exe` in CMD. 
+    <br>
     5. When prompted, paste the path to your video library folder into the app. The app will then generate a new backup file in a new folder called "generate_backup". 
+    <br>
     6. Open this file in notepad or any other editor, and copy its contents. 
+    <br>
     7. Either edit an existing backup or create a new backup file with the same naming pattern as the existing backups, and paste the contents of the generated backup. 
+    <br>
     8. Uninstall Insights Capture (yeah, seriously)
+    <br>
     9. Re-Install 
+    <br>
     10. Once you open Insights Capture again you'll be prompted with a option to restore. Click restore, and choose the final name you either MADE or EDITED. 
+    <br>
     11. Boom, you're done
 
 
