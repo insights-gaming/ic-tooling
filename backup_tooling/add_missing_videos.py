@@ -1,7 +1,7 @@
 from os import walk, mkdir
 from os.path import join, exists
 from time import time
-from backup_tooling.backup.backup_file import Backup
+from backup.backup_file import Backup
 
 from common.logging import ConsoleInterface
 from backup import BackupFolder
