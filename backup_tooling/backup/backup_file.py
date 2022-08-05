@@ -1,10 +1,10 @@
-from os.path import exists, getsize, join
+from os.path import exists, getsize, getmtime, join
 from json import loads, dumps, JSONEncoder
 from time import time
 from typing import Any, Dict 
 from uuid import uuid4
 
-from cv2 import VideoCapture, CAP_PROP_POS_MSEC
+from cv2 import VideoCapture, CAP_PROP_POS_MSEC,CAP_PROP_FPS, CAP_PROP_FRAME_COUNT
 
 class Backup:
     filePath: str
@@ -29,7 +29,7 @@ class Backup:
 
     def load(self):
         try: 
-            rawFileContents = open(self.filePath, "r")
+            rawFileContents = open(self.filePath, "r", encoding="utf8")
             fileContents = loads(rawFileContents.read()) # probably should do this different
 
             return fileContents
@@ -57,7 +57,6 @@ class Backup:
         fileName, 
         options = {
             "gameId": 21640, # See: https://overwolf.github.io/api/games/ids 
-            "created": round(time() * 1000),
             "providedName": None,
         }
     ) -> str: 
@@ -74,10 +73,22 @@ class Backup:
         # Clean up the file path 
         filePath = join(videoPath, fileName).replace("\\", "\\" + "\\") # This feels so fucked
 
+        # Get the video capture
+        cap = VideoCapture(join(videoPath, fileName))
+        fps = cap.get(CAP_PROP_FPS)
+        frame_count = int(cap.get(CAP_PROP_FRAME_COUNT))
+
+        duration = 0
+        if fps == 0:
+            print("Video {} missing an FPS value, which'll result in a duration of 0, good luck with that :)".format(fileName))
+
+        else: 
+            duration = (frame_count/fps) * 1000 # Convert from S to MS
+
         # Build up a video object PAWG
         videoObject = {
             "uuid": uuid,
-            "created": options['created'],
+            "created": round(getmtime(join(videoPath, fileName)) * 1000), # Somehow, I feel like this might be problematic but ohwellsi
             "size": sizeInBytes,
             "gameClassId": options['gameId'], 
             "result": {
@@ -85,7 +96,7 @@ class Backup:
                 "stream_id": 1, # I'm like, 30% positive this can be any int
                 "url": "overwolf://media/recordings/Insights+Capture\\\\{}".format(fileName.replace(" ", "+")),
                 "file_path": filePath,
-                "duration": VideoCapture(join(videoPath, fileName)).get(CAP_PROP_POS_MSEC),
+                "duration": duration,
                 "last_file_path": filePath,
                 "split": True,
                 "splitCount": 1,
@@ -95,6 +106,9 @@ class Backup:
             },
             "userProvidedName": fileName if options["providedName"] == None else options["providedName"]
         }
+
+        # Release to avoid any issues 
+        cap.release()
 
         self.videos[uuid] = videoObject 
         return uuid
@@ -117,7 +131,7 @@ class Backup:
                 return JSONEncoder.default(self, obj)
 
         # Save to file
-        with open(filePath, "w") as file: 
+        with open(filePath, "w", encoding="utf8") as file: 
             file.write(dumps(self.content, indent=4, cls=stupidFuckingIntEncoder))
             file.close()
 
