@@ -71,7 +71,7 @@ class Backup:
         sizeInBytes = getsize(join(videoPath, fileName))
 
         # Clean up the file path 
-        filePath = join(videoPath, fileName).replace("\\", "\\" + "\\") # This feels so fucked
+        filePath = join(videoPath, fileName)#.replace("\\", "\\" + "\\") # This feels so fucked
 
         # Get the video capture
         cap = VideoCapture(join(videoPath, fileName))
@@ -135,3 +135,12 @@ class Backup:
             file.write(dumps(self.content, indent=4, cls=stupidFuckingIntEncoder))
             file.close()
 
+
+
+def createNewBackup(path):
+    jsonToWrite = """{"videoStore":{},"commentStore":{},"settingStore":{},"productTourStore":{},"videoUploadRecordStore":{},"commentRootUploadRecordStore":{},"commentReplyUploadRecordStore":{},"videoBookmarkUploadRecordStore":{},"videoMergedInfoUpdateStore":{},"videoLoLStatsStore":{},"videoValorantGameInfoStore":{},"appDataStore":{"lastBannerId":10844},"videoRecycleBinStore":{},"folderStore":{},"folderRecycleBinStore":{},"libraryItemParentStore":{},"trackedUploadsStore":{},"achievementTrackerStore":{},"actionTrackerStore":{},"libraryMetadataStore":{},"appVersion":"1.8.0.1"}"""
+    contents = open(path, "w", encoding='utf8')
+    contents.write(jsonToWrite)
+    contents.close()
+
+    return Backup(path)

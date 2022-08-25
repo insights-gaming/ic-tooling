@@ -1,10 +1,12 @@
-from os import walk, mkdir
+from os import walk, mkdir, getcwd
 from os.path import join, exists
 from time import time
+from sys import argv
 from backup.backup_file import Backup
 
+
 from common.logging import ConsoleInterface
-from backup import BackupFolder
+from backup import BackupFolder, createNewBackup
 log = ConsoleInterface()
 
 # TODO 
@@ -52,6 +54,43 @@ def main():
     log.log("Saved backup to: {}".format(finalPath))
 
 
+def runInDirectory(): 
+    directory = getcwd()
+    log.log("Checking to see if a backup folder and its contents exists: {}".format(directory))
+
+    # Check to see if a backup folder exists 
+    currentBackup = None
+    if exists("./backups") != True:
+        log.log("Backup folder didn't exist, gonna create a new one and populate it")
+        mkdir("./backups")
+
+        # Write the base backup 
+        currentBackup = createNewBackup("./backups/Insights-Capture-{}.json".format(int(round(time() * 1000))))
+
+    else: 
+        log.log("Backup folder was found in this folder, crazy man. Gonna use it tho-")
+        log.log("If you see issues here, you might want to just move the backup folder to another folder for now.")
+        backupContainer = BackupFolder('./')
+        currentBackup = backupContainer.newestBackup
+
+    # Now that we have a backup, lets open her up and populate 
+    def isVideoAndIsntInBackup(vod: str): 
+        if (vod.endswith('.mp4') != True): return False 
+        return False if currentBackup.videoExists(vod) else True # Pretty fucking complicated way of doing this, someone fix it
+
+    files = list(walk('./'))[0][2]
+    missingFiles = list(filter(isVideoAndIsntInBackup, files))
+
+    for file in missingFiles: 
+        print("\t Handling file {}...".format(file), end="", flush=True)
+        currentBackup.addVideo(directory, file)
+        print("DONE")
+        
+    currentBackup.saveToDisk(currentBackup.filePath)
+    log.log("Saved backup to {}".format(currentBackup.filePath))
+    input("Done :) Press enter to close me")
+
+
 def addMissingVideosToBackup(
     inputBackupFilepath:str, 
     outputFilePath: str, 
@@ -75,7 +114,27 @@ def addMissingVideosToBackup(
 
     backup.saveToDisk(outputFilePath)
 
+
+
+# Quick and dirty way to provide a runtime argument. 
+# If you're adding more arguments, please change the way we find arguments :) 
+def performRuntime(): 
+    if (len(argv) >= 2):
+        for items in argv:
+            if (items == '--ask-for-backup-folder'): 
+                main()
+                return 
+
+    runInDirectory()
+
 if __name__ == "__main__":
-    log.logTitle()
-    main()
-    print("\n") # looks pretty roowowowowoowowowowo
+    try: 
+        log.logTitle()
+        performRuntime()
+        print("\n") # looks pretty roowowowowoowowowowo
+
+    except Exception as e: 
+        print("Something went wrong during the tool's runtime")
+        print(e)
+        input("Press enter to close this window")
+

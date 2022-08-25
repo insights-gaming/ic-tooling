@@ -40,4 +40,7 @@ header = """# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 #               small customer support tasks to make user's lives             #
 #               easier when using Insight Capture.                            #
 #                                                                             #
+#           [+] Use the --ask-for-backup-folder runtime arg to manually       #
+#               specify the location of your backup                           #
+#                                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #"""
