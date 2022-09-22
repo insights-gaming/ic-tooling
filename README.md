@@ -1,19 +1,25 @@
 # Insights Capture Playground
-This repo just contains some code for doing various small tasks with Insights Capture, purely built for fun 
+This repo just contains some code for doing various small tasks customer support based tasks with Insights Capture, purely built for fun 
 
 <br> 
+
 At the moment, it only contains some code to manage / interact with the backups created by Insights Capture, but eventually I'm sure it'll contain more misc code. Or maybe not who knows. 
 
-# Deps
-+ needs `opencv-python` 
+# Dependencies
++ needs `opencv-python` to read the information on a video library
++ needs `xmltodict` to read the gamelist xml 
 
+
+# Tools
+## Adding unsupported games to Overwolf / Insights Capture 
+in progress :)
 
 ## Adding missing videos to Insights Capture 
-[add_missing_videos.py](https://github.com/AudIsCool/ic-tooling/blob/main/backup_tooling/add_missing_videos.py) is a script that takes all of the videos in one directory, and adds them to an Insights Capture backup file, which can then be used to restore Insights Capture with those new videos. You can think of it as a drawn out way of importing videos into Insights Capture. 
+[add_missing_videos.py](https://github.com/insights-gaming/ic-tooling/blob/main/backup_tooling/add_missing_videos.py) is a script that takes all of the videos in one directory, and adds them to an Insights Capture backup file, which can then be used to restore Insights Capture with those new videos. You can think of it as a drawn out way of importing videos into Insights Capture. 
 
 <br> 
 
-You can find the stand-alone executable [here](https://github.com/AudIsCool/ic-tooling/releases/tag/backup-tooling). 
+You can find the stand-alone executable [here](https://github.com/insights-gaming/ic-tooling/releases/tag/backup-tooling). 
 
 
 ### Usage 
@@ -22,7 +28,7 @@ I'll go over this as if you were using the stand-alone executable provided above
 <br>
 
 Steps: 
-1. Download the stand-alone exe and store it somewhere on your PC, your normal download folder is fine
+1. Download the stand-alone exe and store it in the folder you store your Insights Capture videos in. 
 2. Take any videos you'd like to add to Insights Capture, and move them to the folder Insights Capture is using for it's video library (you can see the folder being used in Insights Capture's settings, under the "Video Folder" setting)
 3. Open up CMD or Powershell, and cd to the folder you stored the executable in. For example, if you stored the executable in your downloads folder, you'd type in `cd C:/Users/YOUR_WINDOWS_USERNAME_HERE/Downloads`. 
 4. In CMD, run the `add_missing_videos.exe` by writing `add_missing_videos.exe` in CMD. 
