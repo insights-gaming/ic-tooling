@@ -1,0 +1,2 @@
+ffprobe==0.5
+xmltodict==0.13.0

@@ -1,0 +1,835 @@
+{
+    "ID": [
+        "21",
+        "216262",
+        "41",
+        "4091",
+        "4092"
+    ],
+    "GameTitle": [
+        "OW Game For Testing",
+        "Call of Duty: Modern Warfare 2",
+        "Wolfenstein: Enemy Territory",
+        "Knight Online",
+        "Knight Online"
+    ],
+    "ProcessNames": [
+        {
+            "string": "ExeThatShouldNeverBeFound_OW.exe"
+        },
+        {
+            "string": "cod.exe"
+        },
+        {
+            "string": "KnightOnLine.exe"
+        },
+        {
+            "string": "KnightOnLine.exe"
+        },
+        {
+            "string": "KnightOnLine.exe"
+        }
+    ],
+    "LuancherNames": [
+        {
+            "string": "LauncherThatShouldNeverBeFound_OW.exe"
+        },
+        {
+            "string": "cod.exe"
+        },
+        {
+            "string": "ET.exe"
+        },
+        {
+            "string": "launcher.exe"
+        },
+        {
+            "string": "Launcher.exe"
+        }
+    ],
+    "GameRenderers": [
+        "D3D9",
+        "D3D11 D3D12",
+        "OGL",
+        "D3D8",
+        "D3D8"
+    ],
+    "InjectionDecision": [
+        "Supported",
+        "Supported",
+        "None",
+        "NotSupported",
+        "NotSupported"
+    ],
+    "LauncherDirectoryRegistryKey": [
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Valve\\Steam\\InstallPath",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Activision\\Wolfenstein - Enemy Territory\\InstallPath",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\KnightOnLine\\Path",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\GamersFirst\\Knight Online\\InstallDir",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\GamersFirst\\Knight Online\\InstallDir"
+    ],
+    "GameGenres": [
+        "Dummy Game",
+        "Action_Shooter",
+        "Shooter_First-Person",
+        "Role-Playing_Real-Time-Battle-RPG",
+        "Shooter_Third-Person Action_Shooter"
+    ],
+    "Input": [
+        "DInput8",
+        "DInput8",
+        "DInput8",
+        "DInput8",
+        "DInput8"
+    ],
+    "FixDIFocus": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "FixRCEx": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UseMCH": [
+        "TRUE",
+        "TRUE",
+        "TRUE",
+        "TRUE",
+        "TRUE"
+    ],
+    "ControlModes": [
+        "NotAllowMixedMode",
+        "NotAllowMixedMode",
+        "NotAllowMixedMode",
+        "NotAllowMixedMode",
+        "NotAllowMixedMode"
+    ],
+    "XPSupport": [
+        "NotSupported",
+        "NotSupported",
+        "NotSupported",
+        "NotSupported",
+        "NotSupported"
+    ],
+    "UseNewKLL": [
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "DisableResizeRelease": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "Client_GameControlMode": [
+        "MixedNotAvailable",
+        "MixedAlwaysAvailable",
+        "MixedAlwaysAvailable",
+        "MixedAlwaysAvailable",
+        "MixedAlwaysAvailable"
+    ],
+    "ForceControlRehook": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "RestoreRT": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "EnableSmartFocus": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "Launchable": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "OOPOElevated": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UseRIB": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "OOPO": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "DisplayName": [
+        "Wolfenstein: ET",
+        "SW KOTOR II: TSL",
+        "Armies of Exigo",
+        "ROSE Evolution",
+        "DAoC: Catacombs"
+    ],
+    "RunElevated": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "FixResolutionChange": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "FixInputBlock": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "UseLongHook": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "DisableFeature_TS3": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "InstallHint": [
+        "Postal2.locked",
+        "gamedata\\system\\SWRepublicCommando.exe",
+        "bin\\dmserializers.dll",
+        "DS2VideoConfig.exe",
+        "Madden06.exe"
+    ],
+    "DetectDirKey": [
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\LucasArts\\Star Wars Republic Commando Demo\\1.0\\ExePath",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{E5FCD683-ABAC-4A2D-898E-FFCC8FC8064D}\\LogFile",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Sony Online Entertainment\\LaunchPad2\\KnownInstallLocations\\mxo-live-en_US",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\launcher.exe\\Path",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\NCWest\\LINEAGE2\\BaseDir"
+    ],
+    "LaunchParams": [
+        "-applaunch 8890",
+        "--game MXO",
+        "-applaunch 6220",
+        "\\",
+        "+set fs_game d3xp"
+    ],
+    "GameNotes": [
+        "Only supported when rendered with DirectX9. Game can be set to DirectX 9 through the game launcher settings -> DirectX tab -> change to 'DirectX 9'.",
+        "No support for win XP",
+        "No support for win XP",
+        "On extremely rare occasions game will display two cursors. Close and relaunch game to fix this issue.",
+        "No support for windows 8.1 and Windows 10"
+    ],
+    "Win7Support": [
+        "NotSupported",
+        "NotSupported",
+        "NotSupported",
+        "NotSupported",
+        "NotSupported"
+    ],
+    "TerminateOnWindowClose": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "FixCursorOffset": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "FixSWL": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "SupportedVersion": [
+        "0.81.14",
+        "0.81.14",
+        "0.81.14",
+        "0.81.14",
+        "0.78.34"
+    ],
+    "FixCC": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "ResizeNotifyResolution": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "CommandLine": [
+        "-steam -game czero",
+        "-steam -game czero",
+        "-steam -game cstrike",
+        "-steam -game cstrike",
+        "Guild Wars"
+    ],
+    "ReleaseKBInOverlayFocus": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "DisableActionMixed": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "EnableFocusOnAnyClick": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "FixMixModeCursor": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "DIT": [
+        "15000",
+        "15000",
+        "15000",
+        "15000",
+        "15000"
+    ],
+    "FixActionFocus": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "RecreateSB": [
+        "True",
+        "True"
+    ],
+    "EnableSmartDIFocus": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "EnableSmartDIFocus2": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "IsConflictingWithControlHotkey": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "EnableTXR": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "DisableFeature_VideoCapture": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UseMH": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "AllowCursorMix": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "GenericProcessName": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UnsupportedScheme": [
+        "6/3;10",
+        "6/3;10",
+        "6/3;10",
+        "6/3",
+        "5/1;6/2;10"
+    ],
+    "UseEH": [
+        "6;10",
+        "6;10",
+        "6;10",
+        "6;10",
+        "6;10"
+    ],
+    "DisableEternalEnum": [
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "FixCOEx": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "FixSWLW": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "StuckInTrans_MouseMoveGap": [
+        "4",
+        "4",
+        "4",
+        "4",
+        "4"
+    ],
+    "StuckInTrans_Margin": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+    ],
+    "IconFile": [
+        "icon.ico",
+        "icon.ico",
+        "icon.ico",
+        "metin2.ico",
+        "metin2.ico"
+    ],
+    "UsePR": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UseRI": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UseMKLL": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UseMW": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "SendHotkeyRI": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UpdateCursor": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "FIGVTH": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "ForceCaptureChangeRehook": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "SetDIInExclusive": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "FixHotkeyRI": [
+        "false",
+        "false",
+        "false",
+        "false",
+        "false"
+    ],
+    "ImGuiRendering": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "IgnoreRelease": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "AllowRIMix": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UseAllSafeHook": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "DisableDIAquire": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "KeepInGameOnLostFocus": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "PassThruBoundsOffsetPixel": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+    ],
+    "FixDIBlock": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "SkipGameProc": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "IgnoreMultipleDevices": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "SmartReleaseKBInOverlayFocus": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "PressToClickThrough": [
+        "CONTROL",
+        "CONTROL",
+        "CONTROL",
+        "MENU",
+        "MENU"
+    ],
+    "TCModes": [
+        "TCModeKeepEmulatingWhileHidden",
+        "TCModeKeepEmulatingWhileHidden",
+        "TCModeKeepEmulatingWhileHidden",
+        "TCModeKeepEmulatingWhileHidden",
+        "TCModeKeepEmulatingWhileHidden"
+    ],
+    "UseSafeHook": [
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "DisableBlockChain": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "IgnoreCursorRefCount": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "EnableRawInput": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "WaitRestore": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "FixRestoreSWL": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "UpdateCursorMT": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "DisableEXHandle": [
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "FixMouseDIExclusive": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "FixFSTB": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "CommandLines": [
+        {
+            "string": [
+                "-insecure",
+                "-allow_third_party_software"
+            ]
+        }
+    ],
+    "FixCVCursor": [
+        "True",
+        "True",
+        "True"
+    ],
+    "FixInvisibleCursorCR": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "SupportedScheme": [
+        "6/1",
+        "6/1",
+        "6",
+        "6",
+        "6/1"
+    ],
+    "DisableRenderAI": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "Win8Support": [
+        "NotSupported"
+    ],
+    "RestoreBB": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "EnableMTCursor": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "DisableAeroOnDX11": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "GameLinkURL": [
+        "http://new.1100ad.com/en?",
+        "http://www.11legends.de/",
+        "http://www.11x11.com/",
+        "http://bigfarm.goodgamestudios.com/",
+        "http://fr.demon.koramgame.com/"
+    ],
+    "AllowCCMix": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "ForceGBB": [
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "DisableSafeHook": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "UseNewMLLForExclusive": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+    ],
+    "UseRIKB": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "DisableSmartMixMode": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "LauncherGameClassId": [
+        "5426",
+        "21354"
+    ],
+    "Type": [
+        "Launcher",
+        "Launcher",
+        "Application",
+        "Application",
+        "Application"
+    ],
+    "LauncherDirectoryRegistryKeys": [
+        {
+            "string": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Steam App 477160\\InstallLocation"
+        },
+        {
+            "string": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Steam App 413150\\InstallLocation"
+        },
+        {
+            "string": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Steam App 1046930\\InstallLocation"
+        },
+        {
+            "string": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Steam App 779340\\InstallLocation"
+        },
+        {
+            "string": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Steam App 629760\\InstallLocation"
+        }
+    ]
+}

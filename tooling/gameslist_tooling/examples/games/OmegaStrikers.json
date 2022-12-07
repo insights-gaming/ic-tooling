@@ -1,0 +1,28 @@
+{
+    "ID": "216269",
+    "GameTitle": "Omega Strikers",
+    "ProcessNames": {
+        "string": "SteamApps\\*\\Prometheus\\Prometheus-Win64-Shipping.exe"
+    },
+    "LauncherDirectoryRegistryKey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Valve\\Steam\\InstallPath",
+    "GameRenderers": "OGL",
+    "InjectionDecision": "Supported",
+    "LuancherNames": {
+        "string": "steam.exe"
+    },
+    "LaunchParams": "-applaunch 1869590", 
+    "GameGenres": "Action_Shooter",
+    "ControlModes": "NotAllowMixedMode",
+    "XPSupport": "NotSupported",
+    "UseNewKLL": "true",
+    "DisableResizeRelease": "true",
+    "Client_GameControlMode": "MixedNotAvailable",
+    "ForceControlRehook": "true",
+    "RestoreRT": "true",
+    "EnableSmartFocus": "true",
+    "Launchable": "True",
+    "OOPOElevated": "True",
+    "UseMCH": "TRUE",
+    "UseRIB": "True",
+    "OOPO": "True"
+}

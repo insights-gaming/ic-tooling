@@ -1,0 +1,26 @@
+{
+    "ID": "216262",
+    "GameTitle": "Call of Duty: Modern Warfare 2",
+    "ProcessNames": {
+        "string": "cod.exe"
+    },
+    "GameRenderers": "D3D11 D3D12",
+    "InjectionDecision": "Supported",
+    "LuancherNames": {
+        "string": "cod.exe"
+    },
+    "GameGenres": "Action_Shooter",
+    "ControlModes": "NotAllowMixedMode",
+    "XPSupport": "NotSupported",
+    "UseNewKLL": "true",
+    "DisableResizeRelease": "true",
+    "Client_GameControlMode": "MixedNotAvailable",
+    "ForceControlRehook": "true",
+    "RestoreRT": "true",
+    "EnableSmartFocus": "true",
+    "Launchable": "True",
+    "OOPOElevated": "True",
+    "UseMCH": "TRUE",
+    "UseRIB": "True",
+    "OOPO": "True"
+}
